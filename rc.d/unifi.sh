@@ -22,7 +22,7 @@ unifi_start()
 
     # Open up netcat to listen on port 8080, and then close the connection immediately, then quit.
     # This works around the long startup delay. Thanks to gcohen55.
-    echo "" | nc -l 127.0.0.1 8080 >/dev/null &
+    echo "" | nc -l 127.0.0.1 8090 >/dev/null &
 
     # The process will run until it is terminated and does not fork on its own.
     # So we start it in the background and stash the pid:
